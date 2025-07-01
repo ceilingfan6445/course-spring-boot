@@ -10,10 +10,10 @@ public class ColourPrinterImpl implements ColourPrinter {
   private BluePrinter bluePrinter;
   private GreenPrinter greenPrinter;
 
-  public ColourPrinterImpl() {
-    this.redPrinter = new EnglishRedPrinter();
-    this.bluePrinter = new EnglishBluePrinter();
-    this.greenPrinter = new EnglishGreenPrinter();
+  public ColourPrinterImpl(RedPrinter red, BluePrinter blue, GreenPrinter green) {
+    this.redPrinter = red;
+    this.bluePrinter = blue;
+    this.greenPrinter = green;
   }
 
   @Override
